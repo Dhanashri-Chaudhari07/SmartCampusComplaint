@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Complaint</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SmartCampus</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+        </div>
+    </nav>
+
+    <section class="features">
+        <h2>Register a Complaint</h2>
+
+        <form method="POST" class="complaint-form">
+            <label>Student Name</label>
+            <input type="text" name="student_name" required>
+
+            <label>Department</label>
+            <select name="department" required>
+                <option value="">Select Department</option>
+                <option>Computer</option>
+                <option>IT</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+                <option>Electrical</option>
+                <option>Other</option>
+            </select>
+
+            <label>Complaint Category</label>
+            <select name="category" required>
+                <option value="">Select Category</option>
+                <option>Electrical</option>
+                <option>Classroom</option>
+                <option>Library</option>
+                <option>Water Supply</option>
+                <option>Cleanliness</option>
+                <option>Wi-Fi / Internet</option>
+                <option>Other</option>
+            </select>
+
+            <label>Complaint Description</label>
+            <textarea name="description" rows="5"
+                      placeholder="Describe your problem..."
+                      required></textarea>
+
+            <button type="submit" class="submit-btn">
+                Submit Complaint
+            </button>
+        </form>
+
+        <p><a href="/">Back to Home</a></p>
+    </section>
+
+</body>
+</html>

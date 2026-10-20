@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SmartCampus Admin</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/admin-logout">Logout</a>
+        </div>
+    </nav>
+
+    <section class="features">
+        <h2>Complaint Management Dashboard</h2>
+        <p>Total Complaints: {{ complaints|length }}</p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student</th>
+                        <th>Department</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for c in complaints %}
+                    <tr>
+                        <td>{{ c.id }}</td>
+                        <td>{{ c.student_name }}</td>
+                        <td>{{ c.department }}</td>
+                        <td>{{ c.category }}</td>
+                        <td>{{ c.description }}</td>
+                        <td>{{ c.status }}</td>
+                        <td>
+                            <form method="POST"
+                                  action="{{ url_for('update_status', complaint_id=c.id) }}">
+                                <select name="status">
+                                    <option value="Pending"
+                                    {% if c.status == 'Pending' %}selected{% endif %}>
+                                        Pending
+                                    </option>
+                                    <option value="In Progress"
+                                    {% if c.status == 'In Progress' %}selected{% endif %}>
+                                        In Progress
+                                    </option>
+                                    <option value="Resolved"
+                                    {% if c.status == 'Resolved' %}selected{% endif %}>
+                                        Resolved
+                                    </option>
+                                </select>
+                                <button type="submit" class="submit-btn">
+                                    Update
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="7">No complaints submitted yet.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

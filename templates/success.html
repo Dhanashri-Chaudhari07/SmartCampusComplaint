@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Submitted</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SmartCampus</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/track">Track Complaint</a>
+        </div>
+    </nav>
+
+    <section class="features">
+        <h2>Complaint Submitted Successfully!</h2>
+        <p>Your complaint has been saved.</p>
+
+        {% if complaint_id %}
+        <div class="card">
+            <h3>Your Complaint ID</h3>
+            <h2>#{{ complaint_id }}</h2>
+            <p>Please save this ID to track your complaint.</p>
+        </div>
+        {% endif %}
+
+        <p style="margin-top: 25px;">
+            <a class="btn" href="/track">Track Complaint</a>
+        </p>
+        <p><a href="/">Back to Home</a></p>
+    </section>
+</body>
+</html>

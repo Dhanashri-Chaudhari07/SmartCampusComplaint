@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCampus | Smart Complaint Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="/" class="brand">
+        <span class="brand-icon">S</span>
+        <span>Smart<span class="brand-light">Campus</span></span>
+    </a>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+        <a href="/admin-login" class="nav-login">Admin Login ↗</a>
+    </div>
+</nav>
+
+<main>
+    <section class="hero hero-premium">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="live-dot"></span>
+                SMART CAMPUS · SMARTER SOLUTIONS
+            </div>
+
+            <h1>Your Campus.<br>
+                <span class="gradient-text">Your Voice.</span><br>
+                Our Priority.
+            </h1>
+
+            <p class="hero-description">
+                A better campus begins with a better way to communicate.
+                Report campus issues, track your complaints and help make
+                your college a smarter place for everyone.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="/complaint" class="btn btn-primary">
+                    Register a Complaint <span>↗</span>
+                </a>
+                <a href="/track" class="btn btn-glass">
+                    Track Your Status <span>→</span>
+                </a>
+            </div>
+
+            <div class="hero-trust">
+                <div class="trust-icon">✓</div>
+                <span>Simple reporting</span>
+                <span class="trust-separator">•</span>
+                <span>Transparent tracking</span>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="orbit orbit-large"></div>
+            <div class="orbit orbit-small"></div>
+
+            <div class="visual-core">
+                <div class="core-symbol">✦</div>
+                <span>SMART</span>
+                <strong>CAMPUS</strong>
+                <small>Connected for a better tomorrow</small>
+            </div>
+
+            <div class="float-card float-card-top">
+                <div class="float-icon purple-icon">↗</div>
+                <div>
+                    <small>Complaint tracking</small>
+                    <strong>Stay updated</strong>
+                </div>
+                <span class="float-check">✓</span>
+            </div>
+
+            <div class="float-card float-card-bottom">
+                <div class="float-icon green-icon">✓</div>
+                <div>
+                    <small>Resolution process</small>
+                    <strong>Every voice matters</strong>
+                </div>
+            </div>
+
+            <div class="visual-star star-one">✦</div>
+            <div class="visual-star star-two">✧</div>
+        </div>
+
+        <div class="hero-bottom-label">
+            <span>BUILT FOR A BETTER CAMPUS</span>
+            <span>SCROLL TO EXPLORE ↓</span>
+        </div>
+    </section>
+
+    <section class="metrics-strip">
+        <div class="metric">
+            <span class="metric-icon">◎</span>
+            <div><strong>Easy</strong><small>Complaint Registration</small></div>
+        </div>
+        <div class="metric">
+            <span class="metric-icon">↗</span>
+            <div><strong>Live Updates</strong><small>Status Tracking</small></div>
+        </div>
+        <div class="metric">
+            <span class="metric-icon">◇</span>
+            <div><strong>Transparent</strong><small>Resolution Process</small></div>
+        </div>
+        <div class="metric">
+            <span class="metric-icon">✦</span>
+            <div><strong>Student First</strong><small>Campus Experience</small></div>
+        </div>
+    </section>
+
+    <section class="features premium-section" id="features">
+        <div class="section-heading">
+            <span class="eyebrow">THE SMARTER WAY</span>
+            <h2>A better campus<br>starts with <span class="gradient-text">you.</span></h2>
+            <p>Everything you need to report an issue and follow it through to resolution.</p>
+        </div>
+
+        <div class="premium-card-grid">
+            <article class="premium-card">
+                <div class="feature-icon icon-violet">✎</div>
+                <span class="card-index">01 / REPORT</span>
+                <h3>Quick Reporting</h3>
+                <p>Submit campus complaints through a simple form. Describe the issue and let the right people know.</p>
+                <a href="/complaint" class="card-link">Report an issue <span>↗</span></a>
+                <div class="card-decoration decoration-violet"></div>
+            </article>
+
+            <article class="premium-card">
+                <div class="feature-icon icon-cyan">◉</div>
+                <span class="card-index">02 / TRACK</span>
+                <h3>Real-time Tracking</h3>
+                <p>Use your complaint ID to check its current status and see whether action is being taken.</p>
+                <a href="/track" class="card-link">Track complaint <span>↗</span></a>
+                <div class="card-decoration decoration-cyan"></div>
+            </article>
+
+            <article class="premium-card">
+                <div class="feature-icon icon-green">✓</div>
+                <span class="card-index">03 / RESOLVE</span>
+                <h3>Clear Resolution</h3>
+                <p>Complaints move through Pending, In Progress and Resolved, making progress easier to understand.</p>
+                <a href="/track" class="card-link">Check progress <span>↗</span></a>
+                <div class="card-decoration decoration-green"></div>
+            </article>
+        </div>
+    </section>
+
+    <section class="process-section" id="how-it-works">
+        <div class="process-layout">
+            <div class="process-intro">
+                <span class="eyebrow">SIMPLE BY DESIGN</span>
+                <h2>From issue<br>to <span class="gradient-text">action.</span></h2>
+                <p>No complicated process. Just three simple steps to help improve your campus.</p>
+                <a href="/complaint" class="btn btn-primary">Get Started ↗</a>
+            </div>
+
+            <div class="process-list">
+                <div class="process-item">
+                    <div class="step-number">01</div>
+                    <div>
+                        <h3>Tell us what happened</h3>
+                        <p>Enter your details, choose a complaint category and describe the problem.</p>
+                    </div>
+                    <span class="step-arrow">↗</span>
+                </div>
+
+                <div class="process-item">
+                    <div class="step-number">02</div>
+                    <div>
+                        <h3>Save your complaint ID</h3>
+                        <p>After submission, keep your unique complaint ID to check the status later.</p>
+                    </div>
+                    <span class="step-arrow">↗</span>
+                </div>
+
+                <div class="process-item">
+                    <div class="step-number">03</div>
+                    <div>
+                        <h3>Follow the progress</h3>
+                        <p>Track the complaint as its status changes from Pending to In Progress or Resolved.</p>
+                    </div>
+                    <span class="step-arrow">✓</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-panel">
+            <div class="about-orb">✦</div>
+            <div class="about-content">
+                <span class="eyebrow">OUR VISION</span>
+                <h2>A campus that listens.<br>A community that improves.</h2>
+                <p>
+                    SmartCampus is a college complaint management platform
+                    designed to make campus issue reporting more organized,
+                    accessible and transparent for students and administrators.
+                </p>
+                <a href="/complaint" class="btn btn-light">Make Your Voice Heard ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <span class="eyebrow">YOUR CAMPUS. YOUR CONTRIBUTION.</span>
+        <h2>See something that<br>needs to change?</h2>
+        <p>Every improvement begins when someone speaks up.</p>
+        <div class="hero-buttons cta-buttons">
+            <a href="/complaint" class="btn btn-primary">Register a Complaint ↗</a>
+            <a href="/track" class="btn btn-outline-dark">Track Existing Complaint →</a>
+        </div>
+    </section>
+</main>
+
+<footer class="premium-footer">
+    <a href="/" class="brand footer-brand">
+        <span class="brand-icon">S</span>
+        <span>Smart<span class="brand-light">Campus</span></span>
+    </a>
+    <p>Making campus life smarter, one solution at a time.</p>
+    <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="/admin-login">Admin</a>
+    </div>
+    <div class="footer-bottom">© 2026 SmartCampus · College Project</div>
+</footer>
+
+</body>
+</html>

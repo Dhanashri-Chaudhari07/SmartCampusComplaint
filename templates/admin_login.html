@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SmartCampus Admin</div>
+        <div class="nav-links"><a href="/">Home</a></div>
+    </nav>
+
+    <section class="features">
+        <h2>Admin Login</h2>
+
+        <form method="POST" class="complaint-form">
+            {% if error %}
+                <p style="color:red">{{ error }}</p>
+            {% endif %}
+
+            <label>Username</label>
+            <input type="text" name="username" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <button class="submit-btn" type="submit">
+                Login
+            </button>
+        </form>
+    </section>
+</body>
+</html>
