@@ -1,10 +1,11 @@
 
 from flask import Flask, render_template, request, redirect, url_for, session
 import sqlite3
+import os
 
 app = Flask(__name__)
-app.secret_key = "smart-campus-demo-key"
-
+#app.secret_key = "smart-campus-demo-key"
+app.secret_key = os.environ.get("SECRET_KEY", "dev-only-key")
 def get_db_connection():
     conn = sqlite3.connect("complaints.db")
     conn.row_factory = sqlite3.Row
