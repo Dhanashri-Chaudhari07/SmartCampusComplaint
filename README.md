@@ -19,7 +19,6 @@ SmartCampusComplaint is a web-based complaint management system designed to help
 - **Frontend:** HTML, CSS
 - **Backend:** Python, Flask
 - **Database:** SQLite
-- **Deployment:** Render
 - **Version Control:** Git & GitHub
 
 
