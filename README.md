@@ -4,8 +4,6 @@
 
 SmartCampusComplaint is a web-based complaint management system designed to help students submit campus-related complaints online and make complaint management easier for administrators.
 
-🌐 **Live Demo:** [Visit SmartCampusComplaint](https://smartcampus-complaint.onrender.com)
-
 ---
 
 ## ✨ Features
@@ -24,11 +22,6 @@ SmartCampusComplaint is a web-based complaint management system designed to help
 - **Deployment:** Render
 - **Version Control:** Git & GitHub
 
-## 🚀 Live Application
-
-Try the application here:
-
-👉 https://smartcampus-complaint.onrender.com
 
 ## 💻 Run Locally
 
